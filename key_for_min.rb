@@ -6,9 +6,6 @@ lowest_value = 0
   lowest_key = nil
   
   name_hash.each do |k,v|
-    #if the lowest_value is in it's intial state  
-    #or if the value of the current key is less than the lowest_value
-    #then: set the lowest_value to value and lowest_key to key
     if lowest_value == 0 || v < lowest_value
       lowest_value = v
       lowest_key = k
